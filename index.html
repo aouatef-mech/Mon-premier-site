@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gotu|Playfair+Display|Roboto+Condensed&display=swap" rel="stylesheet"> 
+<title>Document</title>
+
+</head>
+
+<body> 
+  
+<div class="content container-fluid">
+<div class="row">
+  <p class="titre">AOUATEF MECHEMECHE<br>Passionnée par la programmation! je cherche un poste d'intégrateur web en alternance</p>    
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/images/image1.jpg" class="d-block img-fluid" alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/images/image2.jpg" class="d-block img-fluid"  alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/images/image3.jpg" class="d-block img-fluid"  alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/images/image4.jpg" class=" d-block img-fluid"  alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/images/image5.jpg" class="d-block img-fluid"  alt="image">
+          </div>
+        </div> 
+      </div>
+  <div class="articles">
+  <p id="articleC" onclick="artC()" >
+    <span>CONTACT</span><br>
+    Adresse:
+    39 rue Emile Zola,<br>
+    91100 Corbeil-essonnes<br>
+    Téléphone:
+    07 51 53 56 31<br>
+    Email:
+    aouatef.mech@gmail.com <br>
+  </p>
+
+  <p id="articleL" onclick="artL()">
+      <span>LANGUES</span><br>
+    * Arabe Litteraire: Compétence professionnelle complète<br>
+    * Français: Compétence professionnelle limitée<br>
+    * Anglais: Notions élémentaires<br>
+  </p>
+
+  <p id="articleD" onclick="artD()">
+    <span>CERTIFICATS</span><br>
+    1) Certificat des compétences informatiques:<br>
+    Mars 2019|Mai 2019 (Open-classrooms)<br>
+
+     * Certificat HTML5 et CSS3<br>
+     * Certificat PHP et SQL<br>
+
+    2) Certificat des compétences bureautiques:<br>
+      2017|septembre 2017<br>
+    (Centre de formation l'AFPA|Ris-orangis)<br>
+
+     * Word<br>
+     * Excel<br>
+     * traitement de texte<br>
+     
+    3)Licence fondamentale:<br>
+    (Institut supérieur de théologie|Tunis)<br>
+    =>reconnu par enic-naric en France
+  </p>
+
+
+  <p id="articleE"  onclick="artE()">
+    <span>EXPERIENCES</span><br>
+    1) formation développement web:<br>
+    juin 2019 | février 2020<br>( Association Colombbus Paris 75010)<br>
+
+     * langages informatiques html,css,js,php,sql,bootstrap,wordpresse<br>
+     * Réalisation des sites internet pour des clients(conception maquettes, intégration web...) <br>
+
+    2)Animatrice: <br>août 2017 | septembre 2017<br>
+     (Association Habitat et humanisme Paris 75020)<br>
+     
+     * Accueillir les émigrants.<br>
+     * Les accompagner pour les procédures administratives.<br>
+     * Traduction orale Français | Arabe <br>
+  
+   3)Surveillante de Cantines:<br> janvier 2018 | juin 2020 <br>
+   (Mairie de Corbeil-essonnes)<br>
+  
+     * Accueillir les enfants à la sortie des classes.<br>
+     * Assurer la sécurité des enfants.<br>
+     * Pratiquer les premiers soins en cas d'accident.
+  </p>
+</div>
+  <input type="button"  value="Retour" id="return" onclick="retour()"> 
+  <div class="absolute col-12 row-12">
+  <div class="cercle3D">
+    <div class="slider" id="slid">
+      <div class="item a" id="un" onclick="change()" onmouseover="change1()">Expériences</div>
+      <div class="item b" id="deux" onclick="change2()" onmouseover="change3()">Certificats</div>
+      <div class="item c" id="trois" onclick="change4()" onmouseover="change5()">Langues</div>
+      <div class="item d" id="quatre" onclick="change6()" onmouseover="change7()">Contact</div>
+    </div>
+  </div>
+ </div>
+
+    <div class="global col-12 row-12">
+        <div id="rectangle"></div>
+        <div id="rectangle2"></div>
+      <div id="dossier">
+        <div id="feuille1"><a href="asset/dossier_maquette1/maquette1.html" target="_blank">Maquette1</a></div> 
+        <div id="feuille2"><a href="asset/dossier_maquette2/maquette2.html" target="_blank">Maquette2</a></div>
+        <div id="feuille3"><a href="asset/dossier_maquette3/maquette3.html" target="_blank">Maquette3</a></div>
+        <div id="feuille4"><a href="asset/dossier_maquette4/maquette4.html" target="_blank">Maquette4</a></div>
+      </div>
+        <div id="rectangle3" onclick="firstclick()">
+        <div class="maquette">Maquettes réalisées</div>   
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
